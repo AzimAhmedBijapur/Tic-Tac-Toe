@@ -6,6 +6,8 @@ body{
     display: grid;
     grid-template-rows: 1.5fr 10fr 1fr;
     height: 100vh;
+    background:url('./image/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+    background-size: cover;
 }
 header{
     font-size: calc(2rem + 1vw);
@@ -14,8 +16,7 @@ header,footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #63040e;
-    color: white;
+    color: black;
 }
 footer{
     font-size: calc(8px + 0.8vw);
@@ -26,14 +27,13 @@ footer{
     width: calc(245px + 1vw);
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    background-color: white;
     padding: 4px;
-    gap: 4px;
-    background-color: black;
+    gap: 8px;
     border-radius: 10px;
 }
 .board div{
     background-color: white;
+    border-radius: 10px;
 }
 .board div:hover{
     background-color: lightgray;
@@ -41,7 +41,6 @@ footer{
 main{
     display: grid;
     grid-template-rows: 3fr 10fr 3fr;
-    background-color: lightgoldenrodyellow;
 }
 .playing-area{
     display: flex;
@@ -65,7 +64,7 @@ main{
     height: calc(40px + 1vh);
     border-radius: 10px;
     font-size: calc(0.8rem + 0.8vw);
-    background-color: red;
+    background-color: darkslategrey;
     border: 0px;
     color:white;
     font-family: 'Times New Roman', Times, serif;
