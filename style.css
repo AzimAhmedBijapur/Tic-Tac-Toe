@@ -64,7 +64,7 @@ main{
     height: calc(40px + 1vh);
     border-radius: 10px;
     font-size: calc(0.8rem + 0.8vw);
-    background-color: darkslategrey;
+    background-color: darkgreen;
     border: 0px;
     color:white;
     font-family: 'Times New Roman', Times, serif;
