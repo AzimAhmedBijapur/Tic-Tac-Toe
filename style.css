@@ -6,11 +6,11 @@ body{
     display: grid;
     grid-template-rows: 1.5fr 10fr 1fr;
     height: 100vh;
-    background:url('./image/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-size: cover;
 }
 header{
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2rem + 2vw);
 }
 header,footer{
     display: flex;
@@ -23,20 +23,31 @@ footer{
 }
 .board{
     display: grid;
-    height: calc(245px + 1vh);
-    width: calc(245px + 1vw);
+    height: calc(200px + 10vw);
+    width: calc(200px + 10vw);
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     padding: 4px;
-    gap: 8px;
-    border-radius: 10px;
 }
 .board div{
     background-color: white;
-    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(2rem + 2vw);
 }
-.board div:hover{
-    background-color: lightgray;
+.board :nth-child(3n-2){
+    border-left: 0px ;
+}
+.board :nth-child(3n){
+    border-right: 0px ;
+}
+.board :nth-child(n+1):nth-child(-n+3){
+    border-top: 0px ;
+}
+.board :nth-child(n+7):nth-child(-n+9){
+    border-bottom: 0px ;
 }
 main{
     display: grid;
@@ -61,13 +72,14 @@ main{
 
 .restart button{
     width: calc(130px + 1vw);
-    height: calc(40px + 1vh);
+    height: calc(20px + 3vh);
     border-radius: 10px;
     font-size: calc(0.8rem + 0.8vw);
-    background-color: darkgreen;
+    background-color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 0px;
+    font-weight: bolder;
     color:white;
-    font-family: 'Times New Roman', Times, serif;
 }
 .restart button:hover{
     transform: scale(1.1);
