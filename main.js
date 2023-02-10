@@ -42,6 +42,16 @@ function updateCell() {
 }
 function updateStatus() {
   const end = declareWinner();
+  let count = 0;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < options.length; i++) {
+    if (options[i] !== '') {
+      count += 1;
+    }
+    if (count === 9) {
+      board.style.pointerEvents = 'none';
+    }
+  }
   if (end === true) {
     /* empty */
   } else {
