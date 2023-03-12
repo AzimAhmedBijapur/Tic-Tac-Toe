@@ -1,3 +1,4 @@
 # Tic-Tac-Toe
 
-![image](https://user-images.githubusercontent.com/104296616/224568108-7502c2b4-e012-4d0f-bc89-2d31f0ccd37a.png)
+![image](https://user-images.githubusercontent.com/104296616/224568135-6ac63f13-3626-4ca0-87bd-17ac00177e2a.png)
+
